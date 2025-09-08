@@ -1,0 +1,58 @@
+\documentclass[12pt,a4paper]{article}
+% 字体与中文支持
+\usepackage[UTF8]{ctex}
+% 数学符号支持
+\usepackage{amsmath,amssymb}
+% 习题环境
+\usepackage{amsthm}
+% 页边距设置
+\usepackage[margin=2.5cm]{geometry}
+% 行间距
+\usepackage{setspace}
+\onehalfspacing
+\renewcommand{\thesection}{\chinese{section}}
+% 定义“习题”环境
+\newtheorem{exercise}{习题}
+% 定义“解答”环境
+\newenvironment{solution}{\par\noindent\textbf{【解答】}\quad}{\hfill$\Box$\par}
+
+% 设置标题格式（可选）
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{第\,\thesection\,部分}{1em}{}
+
+\title{习题\ 一}
+% \author{数学分析I, 教师： 叶文杰}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\section{教材习题}
+...
+
+\section{补充习题}
+\begin{exercise}
+已知 $a^2 + b^2 = 1$，求证 $|a| + |b| \leq \sqrt{2}$。
+\end{exercise}
+
+
+
+\begin{exercise}
+解方程 $x^2 - 4x + 3 = 0$。
+\end{exercise}
+
+
+
+
+\begin{exercise}
+已知 $\triangle ABC$ 为等边三角形，证明三个内角均为 $60^\circ$。
+\end{exercise}
+
+% 可省略解答环境，也可填写：
+%\begin{solution}
+% 等边三角形三个内角和为 $180^\circ$，每个角为 $60^\circ$。
+%\end{solution}
+
+
+
+\end{document}
