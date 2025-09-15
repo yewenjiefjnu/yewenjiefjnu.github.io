@@ -117,7 +117,10 @@
     
 
       <div style="margin-top: 10px; text-align: center;color: #AAA;">
-        Copyright &copy; 2025, Wenjie Ye.
+       Copyright &copy; <span id="year"></span>, Wenjie Ye.<br>
+ <script>
+   document.getElementById('year').textContent = new Date().getFullYear();
+ </script>
       </div>
     </div>
   </div>

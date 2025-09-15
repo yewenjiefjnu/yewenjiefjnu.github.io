@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
+<meta charset="utf-8">
 <head>
   <meta name="baidu-site-verification" content="codeva-FEikOTQbAv" /> 
   <!--header and icon-->
@@ -18,10 +19,10 @@
       <div id="name">Wenjie Ye (叶文杰)</div>
       <div id="email">Email: yewenjie@fjnu.edu.cn</div>
       <div id="navigator">
-        <div class="nav_cell"><a class="nav" href="#home", style="color:white; text-decoration:none">Home</a></div>
-        <div class="nav_cell"><a class="nav" href="#publication", style="color:white; text-decoration:none">Publication</a></div>
-        <div class="nav_cell"><a class="nav" href="#teaching", style="color:white; text-decoration:none">Teaching</a></div>
-        <div class="nav_cell"><a class="nav" href="#contact", style="color:white;text-decoration:none">Contact</a></div>
+        <div class="nav_cell"><a class="nav" href="#home" style="color:white; text-decoration:none">Home</a></div>
+        <div class="nav_cell"><a class="nav" href="#publication" style="color:white; text-decoration:none">Publication</a></div>
+        <div class="nav_cell"><a class="nav" href="#teaching" style="color:white; text-decoration:none">Teaching</a></div>
+        <div class="nav_cell"><a class="nav" href="#contact" style="color:white;text-decoration:none">Contact</a></div>
         <div class="nav_cell"><a class="nav" href="chinese.html" target="_blank", style="color:white;text-decoration:none">Chinese</a></div>
       </div>
     </div>
@@ -35,7 +36,7 @@
 
         <div id="selfie">
           <!--这里放照片-->
-          <img src="images/selfie2.jpg" /><br>
+          <img src="images/selfie2.jpg" alt="Photo of Wenjie Ye"/><br>
           <div style="text-align: center; margin-top: 10px; font: normal 0.90em 'trebuchet ms', arial, sans-serif;"></div>
         </div>
 
@@ -56,8 +57,8 @@
 
     <!-- publication -->
     <div class="content">
-      <div class="title">Publication</div>
-      <a class="anchor" id="publication" name="publication"></a>
+      <div class="title">Publication</div>  
+      <a class="anchor" id="publication" ></a>
 
       <p style="margin-left: 20px">My papers on <a class="link" href="https://scholar.google.com/citations?user=xoWgdRgAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
 
@@ -65,7 +66,6 @@
       <div class="subtitle">Working papers and preprints:</div>
 
         <ol>
-
           <li>X. Chen, A.B. Cruzeiro,<span class="emph"> W. Ye, </span> Q. Zhang<br>
           <a class="link" href="https://arxiv.org/abs/2301.06490" target="_blank">Forward-backward stochastic differential equations on tensor fields <br> and application to Navier-Stokes equations on Riemannian manifolds.</a><br>
           </li>
@@ -121,7 +121,10 @@
     <hr>
 
   <div style="margin-top: 10px; text-align: center; font: normal 100% 'lucida sans unicode', arial, sans-serif;color: #AAA;">
-  Copyright &copy; 2025, Wenjie Ye.<br>
+Copyright &copy; <span id="year"></span>, Wenjie Ye.<br>
+ <script>
+   document.getElementById('year').textContent = new Date().getFullYear();
+ </script>
   </div>
 
 </body>

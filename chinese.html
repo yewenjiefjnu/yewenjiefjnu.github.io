@@ -83,7 +83,10 @@
   <hr>
   
   <div style="margin-top: 10px; text-align: center; font: normal 100% 'lucida sans unicode', arial, sans-serif;color: #AAA;">
-  Copyright &copy; 2025, Wenjie Ye.<br>
+   Copyright &copy; <span id="year"></span>, Wenjie Ye.<br>
+ <script>
+   document.getElementById('year').textContent = new Date().getFullYear();
+ </script>
   </div>
 
 </body>
